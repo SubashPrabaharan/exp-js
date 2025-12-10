@@ -17,12 +17,21 @@
         <input type="text" placeholder="Enter an expense" id="input-exp"><br>
 
         <button onclick="addExp()">Add Expense +</button>
+         <div class="drop-down">
+        <button class="drop-btn">Add Category</button>
+        <div class="dropdown-content"> 
+                <div id="me-exp"><ul>Medical expense</ul></div>
+                <div id="gc-exp"><ul>Groceries expense</ul></div>
+                <div id="ex-exp"><ul>External expense</ul></div>
+           
+        </div>
+    </div>
         <button onclick="calculate()">Calculate Balance</button>
 
         <input type="text" placeholder="Answer" id="ans">
     </div>
 
-
+   
 
 </body>
 </html>

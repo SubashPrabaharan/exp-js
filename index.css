@@ -38,10 +38,79 @@ body {
             color: white;
             font-size: 14px;
             border-radius: 6px;
-            cursor: pointer;
+            /* cursor: pointer; */
             margin-top: 10px;
         }
 
         button:hover {
             background-color: #0056b3;
         }
+
+    .drop-down
+    {
+   
+
+        position: relative;
+    } 
+    
+    .drop-btn{
+         width: 95%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+    }
+
+    .dropdown-content{
+         width: 100%;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        /* left: 10px; */
+        /* display: flex; */
+        position: absolute;
+        background-color: rgb(199, 192, 192);
+        cursor: pointer;
+        /* border-radius: 20px; */
+        padding: 6px 0;
+     
+      
+
+    }
+
+    .dropdown-content div{
+        display: flex;
+        justify-content: center;
+        padding: 8px 0px;
+    }
+    .dwn-ele:hover{
+        background-color: rgb(66, 63, 63);
+    
+    }
+   
+
+    #me-exp:hover{
+        background-color: rgb(66, 63, 63);
+    }
+
+  
+    #gc-exp:hover{
+                background-color: rgb(66, 63, 63);
+
+    }
+  
+    #ex-exp:hover{
+                background-color: rgb(66, 63, 63);
+    }
+    
+    .drop-down:hover  .dropdown-content {
+         display: block;
+         
+           
+}
+    

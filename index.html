@@ -4,56 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expenses</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            width: 300px;
-            text-align: center;
-        }
-
-        h1 {
-            margin-bottom: 15px;
-        }
-
-        input {
-            width: 90%;
-            padding: 8px;
-            margin: 8px 0;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-        }
-
-        button {
-            width: 95%;
-            padding: 10px;
-            background-color: #007bff;
-            border: none;
-            color: white;
-            font-size: 14px;
-            border-radius: 6px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="/index.css">
 
 </head>
 <body>
@@ -70,31 +22,7 @@
         <input type="text" placeholder="Answer" id="ans">
     </div>
 
-    <script>
-        let arr = [];
 
-        function addExp() {
-            let exp = parseFloat(document.getElementById("input-exp").value);
-
-            if (!isNaN(exp)) {
-                arr.push(exp);
-            }
-
-            document.getElementById("input-exp").value = "";
-        }
-
-        function calculate() {
-            let tot = parseFloat(document.getElementById("input-tot").value);
-
-            let sum = 0;
-            for (let i = 0; i < arr.length; i++) {
-                sum += arr[i];
-            }
-
-            let balance = tot - sum;
-            document.getElementById("ans").value = balance;
-        }
-    </script>
 
 </body>
 </html>
